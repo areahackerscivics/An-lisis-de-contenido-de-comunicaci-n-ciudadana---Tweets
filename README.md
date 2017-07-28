@@ -3,9 +3,22 @@
 
 ## Descripción
 
-Este proyecto se centra en la recogida de información en Twitter. Nos centramos
-en los tweets que hacen mención al Ajuntament de València y sobre estos,
-analizamos de que temas hablan.
+Los diferentes ayuntamientos mantienen abiertos canales de comunicación con la ciudadanía.
+Entendemos que la información generada a través de esta interacción puede ser muy útil para
+conocer lo que les interesa a los ciudadanos.
+Por eso es necesario identificar los canales de comunicación más relevantes incluidos redes
+sociales y seleccionar aquellos que aportarán mayor valor (periodicidad, consistencia,
+pertinencia y confiabilidad) para convertirlos en fuente de datos.
+El procesamiento de la información se hará a través de técnicas de Búsqueda y Recuperación
+de información y algoritmos de aprendizaje automático para realizar la clasificación de la
+información basado en la taxonomía de sectores primarios recogida en la Guía de aplicación de
+la Norma Técnica de Interoperabilidad relativa a la Reutilización de recursos de información
+(página 42 y 43).
+
+Una vez generado el sistema de clasificación se deberá crear un informe comparativo entre los
+temas que habla la gente y los datos publicados por el ayuntamiento. Con esto se puede ver si
+lo que están solicitando los ciudadanos es lo que se está publicando y promover la apertura de
+los datos desde la demanda de la ciudadanía.
 
 
 ## Funcionamiento del proyecto
@@ -20,6 +33,22 @@ clasificación de tweets y sus análisis.
 información de los análisis.
 - **<a href="https://github.com/areahackerscivics/WebInformes.git" target="_blank">WebInformes</a>:** web que muestra la comparación de lo que
 hablan las personas a lo que ofrece el <a href="http://gobiernoabierto.valencia.es/va/" target="_blank">Ajuntament de València</a>.
+
+
+Si deseas utilizar el proyecto, primero de todo necesitarás una base de datos MongoDB y un servidor. Utilizando el
+módulo _DescargaTweet_ realizarás la descarga de tweets, se recomienda que ejecutes este módulo en el servidor.
+Una vez tengas un buen _corpus_ de tweets, puedes entrar al panel de control con el módulo _GeneradorInformesTwitter_.
+
+Este punto es crítico y se recomienda disponer de unos pocos conocimientos en Aprendizaje Automático (_Machine Learning_) y más concretamente, en técnicas para
+tratamiento de textos (Bag of Words, Steamming, Regex...). Necesitarás disponer de
+un _clasificador_, por lo que, entrando en _Administrar/Listar Clasificadores_ puedes
+gestionar un _clasificador_. La creación (entrenamiento) del _clasificador_ puede
+tardar un poco, ten paciencia. Cuando ya tienes el clasificador, en el apartado
+_Administrar/Clasificar_ puedes ver un listado por fecha, el número de tweets que
+dispone. Marcnado en la casilla, seleccionas las fechas a clasificar.
+
+Con tweets clasificados en la base de datos, ya puedes arrancar el servicio REST (módulo _ReporteAPI_). Con este servicio en marcha, puedes ver los resultados a través
+del módulo _WebInformes_ o tu o cualquier otra persona, puede hacerse una aplicación propia para consultar a este servicio.
 
 ## Equipo
 - Autores principales:  
