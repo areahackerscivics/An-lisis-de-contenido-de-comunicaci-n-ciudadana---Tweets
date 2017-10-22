@@ -23,16 +23,17 @@ los datos desde la demanda de la ciudadanía.
 
 ## Funcionamiento del proyecto
 
-Este proyecto consta de cuatro módulos:
-
-- **<a href="https://github.com/areahackerscivics/DescargaTweet.git" target="_blank">DescargaTweet</a> :** este módulo se encarga de la búsqueda y
-descarga de tweets.
-- **<a href="https://github.com/areahackerscivics/GeneradorInformesTwitter.git" target="_blank">GeneradorInformesTwitter</a>:** panel de control para gestionar la
+Este proyecto consta de dos módulos:
+- **Módulo 1. Clasificación**:
+  - [**Descarga**](https://github.com/areahackerscivics/AC_M1_DescargaTweet). Se encarga de la búsqueda y descarga de tweets.
+  - [**Clasificación**](https://github.com/areahackerscivics/AC_M1_GeneradorInformesTwitter). Gestiona la
 clasificación de tweets y sus análisis.
-- **<a href="https://github.com/areahackerscivics/ReporteAPI.git" target="_blank">ReporteAPI</a>:** pequeña API REST para devolver la
-información de los análisis.
-- **<a href="https://github.com/areahackerscivics/WebInformes.git" target="_blank">WebInformes</a>:** web que muestra la comparación de lo que
-hablan las personas a lo que ofrece el <a href="http://gobiernoabierto.valencia.es/va/" target="_blank">Ajuntament de València</a>.
+
+- **Módulo 2. Reportes**:
+  - [**API**](https://github.com/areahackerscivics/AC_M2_ReporteAPI). API REST para devolver la información de los análisis.
+  - [**Visualización reportes**](https://github.com/areahackerscivics/AC_M2_Reportes). Web que muestra la comparación de lo que hablan las personas a lo que ofrece el Ajuntament de València.
+
+
 
 
 Si deseas utilizar el proyecto, primero de todo necesitarás una base de datos MongoDB y un servidor. Utilizando el
