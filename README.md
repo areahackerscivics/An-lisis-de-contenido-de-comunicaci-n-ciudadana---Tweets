@@ -26,7 +26,9 @@ los datos desde la demanda de la ciudadanía.
 Este proyecto consta de dos módulos:
 - **Módulo 1. Clasificación**:
   - [**Descarga**](https://github.com/areahackerscivics/AC_M1_DescargaTweet). Se encarga de la búsqueda y descarga de tweets.
-  - [**Clasificación**](https://github.com/areahackerscivics/AC_M1_GeneradorInformesTwitter). Gestiona la
+  - [**Clasificación**](https://github.com/areahackerscivics/AC_M1_Clasificacion). Gestiona la
+clasificación de tweets y sus análisis.
+- [**Catálogo**](https://github.com/areahackerscivics/AC_M1_Catalogo). Gestiona la
 clasificación de tweets y sus análisis.
 
 - **Módulo 2. Reportes**:
