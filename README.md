@@ -28,8 +28,7 @@ Este proyecto consta de dos módulos:
   - [**Descarga**](https://github.com/areahackerscivics/AC_M1_DescargaTweet). Se encarga de la búsqueda y descarga de tweets.
   - [**Clasificación**](https://github.com/areahackerscivics/AC_M1_Clasificacion). Gestiona la
 clasificación de tweets y sus análisis.
--[**Catálogo**](https://github.com/areahackerscivics/AC_M1_Catalogo). Gestiona la
-clasificación de tweets y sus análisis.
+ -   [**Catálogo**](https://github.com/areahackerscivics/AC_M1_Catalogo). Gestiona la búsqueda y descarga del catálogo de datos abiertos publicado por el ayuntamiento de valencia.
 
 - **Módulo 2. Reportes**:
   - [**API**](https://github.com/areahackerscivics/AC_M2_ReporteAPI). API REST para devolver la información de los análisis.
