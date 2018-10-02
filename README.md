@@ -36,9 +36,11 @@ clasificación de tweets y sus análisis.
   - [**Resultado**]( https://marymatt.github.io/).
 
 
-Si deseas utilizar el proyecto, primero de todo necesitarás una base de datos MongoDB y un servidor. Utilizando el
-módulo _DescargaTweet_ realizarás la descarga de tweets, se recomienda programar una tarea para que la descarga de tweets se ejecute automáticamente en el servidor.
+Si deseas utilizar el proyecto,  necesitarás una base de datos MongoDB. 
 
+Utilizando el módulo [**Descarga**] realizarás la descarga de tweets, se recomienda programar una tarea para que la descarga de tweets se ejecute automáticamente en el servidor.
+
+Utilizando el módulo [**Clasificación**] realizarás la predicción de los nuevos tweets, se recomienda programar una tarea para que la clasificación se ejecute automáticamente en el servidor.
 
 Con tweets clasificados en la base de datos, ya puedes arrancar el servicio REST (módulo _ReporteAPI_). Con este servicio en marcha, puedes ver los resultados a través
 del módulo _WebInformes_ o tu o cualquier otra persona, puede hacerse una aplicación propia para consultar a este servicio.
