@@ -36,19 +36,9 @@ clasificación de tweets y sus análisis.
   - [**Resultado**]( https://marymatt.github.io/).
 
 
-
-
 Si deseas utilizar el proyecto, primero de todo necesitarás una base de datos MongoDB y un servidor. Utilizando el
-módulo _DescargaTweet_ realizarás la descarga de tweets, se recomienda que ejecutes este módulo en el servidor.
-Una vez tengas un buen _corpus_ de tweets, puedes entrar al panel de control con el módulo _GeneradorInformesTwitter_.
+módulo _DescargaTweet_ realizarás la descarga de tweets, se recomienda programar una tarea para que la descarga de tweets se ejecute automáticamente en el servidor.
 
-Este punto es crítico y se recomienda disponer de unos pocos conocimientos en Aprendizaje Automático (_Machine Learning_) y más concretamente, en técnicas para
-tratamiento de textos (Bag of Words, Steamming, Regex...). Necesitarás disponer de
-un _clasificador_, por lo que, entrando en _Administrar/Listar Clasificadores_ puedes
-gestionar un _clasificador_. La creación (entrenamiento) del _clasificador_ puede
-tardar un poco, ten paciencia. Cuando ya tienes el clasificador, en el apartado
-_Administrar/Clasificar_ puedes ver un listado por fecha, el número de tweets que
-dispone. Marcnado en la casilla, seleccionas las fechas a clasificar.
 
 Con tweets clasificados en la base de datos, ya puedes arrancar el servicio REST (módulo _ReporteAPI_). Con este servicio en marcha, puedes ver los resultados a través
 del módulo _WebInformes_ o tu o cualquier otra persona, puede hacerse una aplicación propia para consultar a este servicio.
