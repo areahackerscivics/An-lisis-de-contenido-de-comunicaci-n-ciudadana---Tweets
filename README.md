@@ -33,7 +33,7 @@ clasificación de tweets y sus análisis.
 - **Módulo 2. Reportes**:
   - [**API**](https://github.com/areahackerscivics/AC_M2_ReporteAPI). API REST para devolver la información de los análisis.
   - [**Visualización reportes**](https://github.com/areahackerscivics/AC_M2_Reportes).Código de la web que muestra la comparación de lo que hablan las personas a lo que ofrece el Ajuntament de València.
-  - [**Resultado**]( https://marymatt.github.io/).
+- **Resultado**: para ver la página en funcionamiento dar click [**Aquí**]( https://marymatt.github.io/).
 
 
 Si deseas utilizar el proyecto,  necesitarás una base de datos MongoDB. 
